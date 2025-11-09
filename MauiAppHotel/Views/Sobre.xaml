@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre">
+    <VerticalStackLayout>
+        <Label 
+            Text="Projeto desenvolvido por Theo de Souza Oliveira em 02/11/2025.Possui o objetivo de desenvolver um aplicativo de hospedagem para um hotel, incluindo a quantidade de adultos e crianças que iram estar hospedadas, o período de tempo que ficarão e em seguida, confirmando e finalizando a hospedagem."
+            FontFamily="MomoSignature"
+            BackgroundColor="{StaticResource Primary}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
