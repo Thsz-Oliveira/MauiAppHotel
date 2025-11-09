@@ -10,6 +10,24 @@ public partial class ContratacaoHospedagem : ContentPage
 
     private async void BtnSobre_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Sobre());
+        try
+        {
+            Navigation.PushAsync(new Sobre());
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
+    }
+
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        try{
+            Navigation.PushAsync(new HospedagemContratada());
+        }
+        catch(Exception ex)
+        {
+            DisplayAlert("Ops",ex.Message,"OK");
+        }
     }
 }
