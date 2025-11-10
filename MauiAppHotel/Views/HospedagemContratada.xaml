@@ -11,38 +11,40 @@
                FontSize="50"
                HorizontalTextAlignment="Center"/>
         <Frame Margin="10">
-            <HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <Label Text="Adultos: " />
-                    <Label Text="2" 
-                           TextColor="{StaticResource Primary}"/>
-                </HorizontalStackLayout>
-
-                <HorizontalStackLayout>
-                    <Label Text="Crianças: " />
-                    <Label Text="1" 
-                           TextColor="{StaticResource Primary}"/>
-
-                </HorizontalStackLayout>
-            </HorizontalStackLayout>
-        </Frame>
-
-        <Frame Margin="10">
             <Grid ColumnDefinitions="*,*,*"
                   RowDefinitions="Auto,Auto">
-                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:"/>
-                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:"/>
-                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" TextColor="SteelBlue"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" TextColor="SteelBlue"/>
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" TextColor="SteelBlue"/>
 
                 <Label Grid.Row="1" Grid.Column="0" Text="09/11/2025"/>
                 <Label Grid.Row="1" Grid.Column="1" Text="12/11/2025"/>
                 <Label Grid.Row="1" Grid.Column="2" Text="3"/>
             </Grid>
         </Frame>
+        
+        <Frame Margin="10">
+            <HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="Adultos: "/>
+                    <Label Text="2" 
+                           TextColor="{StaticResource PrimaryDark}"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label Text="Crianças: "/>
+                    <Label Text="1" 
+                           TextColor="{StaticResource PrimaryDark}"/>
+
+                </HorizontalStackLayout>
+            </HorizontalStackLayout>
+        </Frame>
+
+
 
         <Frame Margin="10">
             <HorizontalStackLayout>
-                <Label Text="Valor Total:"/>
+                <Label Text="Valor Total:" TextColor="SteelBlue"/>
                 <Label Text="R$750,00 "/>
             </HorizontalStackLayout>
         </Frame>
